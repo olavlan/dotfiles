@@ -15,10 +15,8 @@ chezmoi edit -a <config_file>
 # backup config files
 cd $(chezmoi source-path)
 git add .
-diff=$(git diff)
 git commit -m "update"
 git push origin main
-echo "diff"
 
 % config, remove
 @ chezmoi
