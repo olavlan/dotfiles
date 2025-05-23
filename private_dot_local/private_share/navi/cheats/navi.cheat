@@ -1,5 +1,7 @@
 % navi
 
 # add navi cheat file
-cd $(navi info cheats-path) && touch <filename> && hx <filename> 
+cd $(navi info cheats-path)
+touch <filename>
+hx <filename> 
 
