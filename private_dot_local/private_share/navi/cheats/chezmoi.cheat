@@ -2,10 +2,10 @@
 
 $ config_file: chezmoi managed
 
-% config
+% config, edit
 @ chezmoi
 
-# change a config file
+# edit a config file
 cd
 chezmoi edit -a <config_file>
 
@@ -13,10 +13,12 @@ chezmoi edit -a <config_file>
 @ chezmoi
 
 # backup config files
-chezmoi cd
+cd $(chezmoi source-path)
 git add .
+diff=$(git diff)
 git commit -m "update"
 git push origin main
+echo "diff"
 
 % config, remove
 @ chezmoi
