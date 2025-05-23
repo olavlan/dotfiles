@@ -1,0 +1,16 @@
+
+% dirs, common
+
+$ pictures_folder: echo "/my/pictures"
+
+% wallpapers
+@ dirs, common
+
+# Should print /my/pictures/wallpapers
+echo "<pictures_folder>/wallpapers"
+
+% screenshots
+@ dirs, common
+
+# Should print /my/pictures/screenshots
+echo "<pictures_folder>/screenshots"
