@@ -1,7 +1,7 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo >> ~/.zshrc           
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.zshrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
