@@ -1,0 +1,11 @@
+packages:
+  brew:
+    - eget
+    - pipx
+    - helix
+    - navi
+    - tlrc
+    - task
+  eget:
+    - quickemu-project/quickemu
+  pipx:
