@@ -9,15 +9,6 @@ $ config_file: chezmoi managed
 cd
 chezmoi edit -a <config_file>
 
-% config, backup
-@ chezmoi
-
-# backup config files
-cd $(chezmoi source-path)
-git add .
-git commit -m "update"
-git push origin main
-
 % config, remove
 @ chezmoi
 
