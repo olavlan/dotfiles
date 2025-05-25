@@ -1,6 +1,6 @@
 % books
 
-$ html_title: find ~/main/data/books -type f -name "index.html" | xargs -I{} sh -c 'pup "title text{}" < "{}"'
+$ html_title: find . -type f -name "index.html" | while IFS= read -r file; do echo "Found file: $file"; done
 
 % book, open
 @ books
