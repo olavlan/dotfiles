@@ -1,7 +1,7 @@
 % books
 
 $ html_filename: find ~/main/data/books -type f -name "index.html" 
-$ html_title: echo "$html_filename test"
+$ html_title: echo "$html_filename"
 
 % book, open
 @ books
