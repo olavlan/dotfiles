@@ -1,9 +1,10 @@
 % books
 
-$ html_title: find ~/main/data/books -type f -name "index.html" | sort | while IFS= read -r file; do title=$(cat $file | pup "title text{}"); echo "$title"; done | nl --- --map "cut -f1"
+$ book_nr: find ~/main/data/books -type f -name "index.html" | sort | while IFS= read -r file; do title=$(cat $file | pup "title text{}"); echo "$title"; done | nl --- --map "cut -f1"
 
 % book, open
 @ books
 
 # open a book
-find ~/main/data/books -type f -name "index.html" | sort | sed -n <html_title>p
+book_path=$(find ~/main/data/books -type f -name "index.html" | sort | sed -n <book_nr>p)
+echo $book_path
