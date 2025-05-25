@@ -7,4 +7,4 @@ $ html_title: find ~/main/data/books -type f -name "index.html" | sort | while I
 
 # open a book
 html_file=find ~/main/data/books -type f -name "index.html" | sort | sed -n <html_title>p
-python3 -m http.server $html_file 
+echo $html_file
