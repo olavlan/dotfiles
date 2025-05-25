@@ -1,6 +1,6 @@
 % books
 
-$ html_title: find ~/main/data/books -type f -name "index.html" | while IFS= read -r file; title=$(cat $file | pup "title text{}"); echo "$title"; done | paste - -
+$ html_title: find ~/main/data/books -type f -name "index.html" | sort | while IFS= read -r file; do title=$(cat $file | pup "title text{}"); echo "$title"; done | nl
 
 % book, open
 @ books
