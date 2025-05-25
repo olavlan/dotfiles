@@ -1,8 +1,7 @@
 % books
 
 $ html_filename: find ~/main/data/books -type f -name "index.html" 
-$ html_title: echo "<html_filename>"
-
+$ html_title: echo "<html_filename>" | xargs -I{} sh -c 'pup "title text{}" < "{}"'
 % book, open
 @ books
 
