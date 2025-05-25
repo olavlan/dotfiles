@@ -7,5 +7,5 @@ $ html_title: echo "$html_filename test"
 @ books
 
 # open a book
-python3 -m http.server <html_filename>
+python3 -m http.server <html_title>
  
