@@ -7,4 +7,4 @@ $ book_nr: find ~/main/data/books -type f -name "index.html" | sort | while IFS=
 
 # open a book
 book_path=$(find ~/main/data/books -type f -name "index.html" | sort | sed -n <book_nr>p)
-python3 -m http.server $book_path
+python3 -m http.server -d $book_path
