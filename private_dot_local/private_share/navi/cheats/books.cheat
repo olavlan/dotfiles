@@ -1,11 +1,10 @@
 % books
 
-$ html_file: find . -type f -name "index.html"
-$ html_filename: $html_file | 
-	while IFS= read -r line; do 
-		title=$(cat $line | pup 'title text{}');
-		printf "%s\t%s\n" "$title" "$line" 
-	done 
+html_filename: find -type f -name "index.html" | while IFS= read -r line; do title=$(cat $line | pup 'title text{}'); printf "%s\t%s\n" "$line" "$title";  done | column -s $'\t' -t 
 
-% open book
-python3 -m html.server <html_filename>
+% book open
+@ books
+
+# open a book
+echo <html_filename> | awk '{ print $1 }' | python3 -m http.server
+ 
