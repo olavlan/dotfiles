@@ -1,7 +1,6 @@
 % books
 
 $ html_title: find . -type f -name "index.html" | while IFS= read -r file; do echo "Found file: $file"; done
-
 % book, open
 @ books
 
