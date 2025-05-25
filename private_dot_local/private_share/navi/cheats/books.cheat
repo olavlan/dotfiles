@@ -1,9 +1,11 @@
 % books
 
-$ html_files
-find . -type f -name "index.html" | \
-while IFS= read -r line; do
-	title=$(cat $line | pup 'title text{}');
-	printf "%s\t%s\n" "$title" "$line" 
-done | \
-column -s $'\t' -t
+$ html_file: find . -type f -name "index.html"
+$ html_filename: $html_file | 
+	while IFS= read -r line; do 
+		title=$(cat $line | pup 'title text{}');
+		printf "%s\t%s\n" "$title" "$line" 
+	done 
+
+% open book
+python3 -m html.server <html_filename>
