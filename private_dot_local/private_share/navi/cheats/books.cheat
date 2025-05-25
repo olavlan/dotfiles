@@ -1,6 +1,6 @@
 % books
 
-html_filename: find ~/main/data/books -type f -name "index.html" 
+$ html_filename: find ~/main/data/books -type f -name "index.html" 
 
 % book, open
 @ books
