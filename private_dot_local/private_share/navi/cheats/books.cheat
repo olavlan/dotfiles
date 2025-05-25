@@ -1,6 +1,6 @@
 % books
 
-$ html_title: find . -type f -name "index.html" | while IFS= read -r file; do echo "Found file: $file"; done
+$ html_title: find ~/main/data/books -type f -name "index.html" | while IFS= read -r file; do title=$(cat $file | pup "title text{}"); echo $title; done
 
 % book, open
 @ books
