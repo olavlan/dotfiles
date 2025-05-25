@@ -1,6 +1,6 @@
 % books
 
-html_filename: find -type f -name "index.html" | while IFS= read -r line; do title=$(cat $line | pup 'title text{}'); printf "%s\t%s\n" "$line" "$title";  done | column -s $'\t' -t 
+html_filename: find ~/main/data/books -type f -name "index.html" | while IFS= read -r line; do title=$(cat $line | pup 'title text{}'); printf "%s\t%s\n" "$line" "$title";  done | column -s $'\t' -t 
 
 % book open
 @ books
