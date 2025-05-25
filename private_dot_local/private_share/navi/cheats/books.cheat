@@ -6,5 +6,4 @@ $ html_title: find ~/main/data/books -type f -name "index.html" | sort | while I
 @ books
 
 # open a book
-html_file=find ~/main/data/books -type f -name "index.html" | sort | sed -n <html_title>p
-echo $html_file
+find ~/main/data/books -type f -name "index.html" | sort | sed -n <html_title>p
