@@ -9,3 +9,4 @@ $ book_nr: find ~/main/data/books -type f -name "index.html" | sort | while IFS=
 book_path=$(find ~/main/data/books -type f -name "index.html" | sort | sed -n <book_nr>p)
 cd $(dirname $book_path)
 python3 -m http.server
+xdg-open "http://localhost:8000"
