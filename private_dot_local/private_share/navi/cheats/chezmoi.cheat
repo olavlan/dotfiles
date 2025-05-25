@@ -15,6 +15,7 @@ chezmoi edit -a <config_file>
 # remove a config file
 cd
 chezmoi forget <config_file>
+sudo rm -rf <config_file>
 
 % config, backup
 @ chezmoi
