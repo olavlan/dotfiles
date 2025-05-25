@@ -1,2 +1,9 @@
 % books
 
+$ html_files
+find . -type f -name "index.html" | \
+while IFS= read -r line; do
+	title=$(cat $line | pup 'title text{}');
+	printf "%s\t%s\n" "$title" "$line" 
+done | \
+column -s $'\t' -t
