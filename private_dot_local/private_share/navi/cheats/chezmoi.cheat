@@ -15,3 +15,12 @@ chezmoi edit -a <config_file>
 # remove a config file
 cd
 chezmoi forget <config_file>
+
+% config, backup
+@ chezmoi
+
+# push config to dotfiles repo
+cd chezmoi
+git add .
+git commit -m "update"
+git push origin main
