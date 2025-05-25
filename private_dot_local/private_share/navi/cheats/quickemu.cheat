@@ -1,0 +1,7 @@
+% quickemu
+
+% vm, ubuntu
+@ quickemu
+
+# start a ubuntu virtual machine
+quickemu --status-quo --vm ubuntu-24.04.conf
