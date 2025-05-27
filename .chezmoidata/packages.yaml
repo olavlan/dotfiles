@@ -2,10 +2,11 @@ packages:
   brew:
     - eget
     - pipx
+    - zsh
+    - vim
     - helix
     - navi
     - tlrc
-    - task
   eget:
     - quickemu-project/quickemu
   pipx:
