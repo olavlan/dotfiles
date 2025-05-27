@@ -3,10 +3,11 @@
 
 sudo apt-get install build-essential procps curl file git
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
+source ~/.bashrc
 brew install gcc
-{{ range .packages.brew -}}
-brew install {{ . | quote }}
-{{ end -}}
+#{{ range .packages.brew -}}
+#brew install {{ . | quote }}
+#{{ end -}}
 
 {{ end -}}
