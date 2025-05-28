@@ -17,11 +17,3 @@ cd
 chezmoi forget <config_file>
 sudo rm -rf <config_file>
 
-% config, backup
-@ chezmoi
-
-# push config to dotfiles repo
-chezmoi cd
-git add .
-git commit -m "update"
-git push origin main
