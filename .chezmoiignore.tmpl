@@ -1,4 +1,4 @@
 
-{{ if ne .chezmoi.os "darwin" }}
-.chezmoiscripts/**
+{{ if eq .chezmoi.os "linux" }}
+.chezmoiscripts/run_once_install-packages.sh.tmpl
 {{ end }}
