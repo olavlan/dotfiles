@@ -21,7 +21,7 @@ sudo rm -rf <config_file>
 @ chezmoi
 
 # push config to dotfiles repo
-cd chezmoi
+chezmoi cd
 git add .
 git commit -m "update"
 git push origin main
