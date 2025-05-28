@@ -1,0 +1,9 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+font_file=$(fc-match -f "%{file}\n")
+font_dir=$(dirname $font_file)
+sudo find $font_dir -maxdepth 1 -type f ! -iname '*bold*' -delete
+mono_font_file=$(fc-match monospace -f "%{file}\n")
+mono_font_dir=$(dirname $mono_font_file)
+sudo find $mono_font_dir -maxdepth 1 -type f ! -iname '*bold*' -delete
+{{ end -}}
