@@ -4,7 +4,9 @@
 #set terminal font
 profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
 profile=${profile:1:-1}
-gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" font "Monospace Bold 15"
+dconf_schema="org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/"
+gsettings set $dconf_schema use-system-font false
+gsettings set $dconf_schema font "Monospace Bold 15"
 
 
 {{ end -}}
