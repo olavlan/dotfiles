@@ -1,9 +1,12 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 
-#set system font
+#set system fonts to Open Sans
+system_font="Open Sans Bold 14"
 dconf_schema="org.gnome.desktop.interface"
-gsettings set $dconf_schema font-name "Open Sans Bold 14"
+gsettings set $dconf_schema font-name $system_font
+gsettings set $dconf_schema document-font-name $system_font
+
 
 #set terminal font
 profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
