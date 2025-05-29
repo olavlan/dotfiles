@@ -1,7 +1,0 @@
-{{ if eq .chezmoi.os "linux" -}}
-#!/bin/bash
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-hstr --show-zsh-configuration >> ~/.zshrc
-
-{{ end -}}
