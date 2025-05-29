@@ -12,3 +12,4 @@ profile=${profile:1:-1}
 dconf_schema="org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/"
 gsettings set $dconf_schema use-system-font false
 gsettings set $dconf_schema font "Monospace Bold 15"
+
