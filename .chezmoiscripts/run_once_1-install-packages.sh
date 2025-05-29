@@ -10,12 +10,13 @@ test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/bre
 brew install gcc
 
 # install packages
+export HOMEBREW_BUNDLE_FILE=~/.brew/Brewfile 
 brew bundle
 
 # set up oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # set up terminal tools
-echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.zshrc
-hstr --show-zsh-configuration >> ~/.zshrc
-source ~/zshrc
+# echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.zshrc
+# hstr --show-zsh-configuration >> ~/.zshrc
+# source ~/zshrc
