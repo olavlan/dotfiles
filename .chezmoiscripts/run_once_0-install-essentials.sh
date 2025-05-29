@@ -16,7 +16,3 @@ brew bundle
 # set up oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --keep-zshrc
 
-# set up terminal tools
-# echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.zshrc
-# hstr --show-zsh-configuration >> ~/.zshrc
-# source ~/zshrc
