@@ -1,4 +1,3 @@
-{{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 
 # install preequisites for brew
@@ -12,9 +11,6 @@ echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 brew install gcc
 
 # install essential packages
-{{ range .packages.brew.essential -}}
-brew install {{ . | quote }}
-{{ end -}}
 
 # set up oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -23,5 +19,3 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.zshrc
 hstr --show-zsh-configuration >> ~/.zshrc
 source ~/zshrc
-
-{{ end -}}
