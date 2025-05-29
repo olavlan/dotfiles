@@ -10,7 +10,8 @@ test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/bre
 echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 brew install gcc
 
-# install essential packages
+# install packages
+brew bundle
 
 # set up oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
