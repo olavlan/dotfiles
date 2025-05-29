@@ -130,8 +130,9 @@ zle -N hstr_no_tiocsti
 bindkey '\C-r' hstr_no_tiocsti
 export HSTR_TIOCSTI=n
 
-# set env variables for easy access to dconf schemas
+# set env variables 
 profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
 profile=${profile:1:-1}
 export DCONF_TERMINAL_PROFILE="org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/"
 export DCONF_INTERFACE="org.gnome.desktop.interface"
+export HOMEBREW_BUNDLE_FILE=~/.brew/Brewfile 
