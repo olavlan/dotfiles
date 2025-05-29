@@ -18,7 +18,6 @@ brew install {{ . | quote }}
 
 # set up zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-zsh
 
 # set up terminal tools
 echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.zshrc
