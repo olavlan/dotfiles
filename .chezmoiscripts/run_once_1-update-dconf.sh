@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-source ~/zshrc
+source ~/.zshrc
 
 #set system fonts to Open Sans
 system_font="Open Sans Bold 14"
