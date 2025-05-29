@@ -1,12 +1,16 @@
 packages:
   brew:
-    - eget
-    - pipx
-    - zsh
-    - vim
-    - helix
-    - navi
-    - tlrc
+    essential:
+      - zsh
+      - hstr
+    packaging:
+      - eget
+      - pipx
+    other:
+      - vim
+      - helix
+      - tlrc
+      - navi
   eget:
     - quickemu-project/quickemu
   pipx:
