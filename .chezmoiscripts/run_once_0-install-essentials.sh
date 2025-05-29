@@ -13,7 +13,3 @@ brew install gcc
 export HOMEBREW_BUNDLE_FILE=~/.brew/Brewfile 
 brew bundle
 
-# set up oh my zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-chezmoi apply ~/.zshrc
-
