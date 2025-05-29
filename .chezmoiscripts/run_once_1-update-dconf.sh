@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+source ~/zshrc
+
 #set system fonts to Open Sans
 system_font="Open Sans Bold 14"
 gsettings set $DCONF_INTERFACE font-name "$system_font"
