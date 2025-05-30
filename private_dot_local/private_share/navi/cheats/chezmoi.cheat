@@ -1,9 +1,11 @@
 % config, edit
-
 # edit a config file
 chezmoi edit -a "$(chezmoi managed -i files -p absolute | fzf)"
 
 % config, remove
-
 # remove a config file
 chezmoi forget "$(chezmoi managed -i files -p absolute | fzf)"
+
+% config, apply
+# apply config edits made in target
+chezmoi apply -x scripts
