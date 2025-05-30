@@ -1,19 +1,9 @@
-% chezmoi 
-
-$ config_file: chezmoi managed
-
 % config, edit
-@ chezmoi
 
 # edit a config file
-cd
-chezmoi edit -a <config_file>
+chezmoi edit -a "$(chezmoi managed -i files -p absolute | fzf)"
 
 % config, remove
-@ chezmoi
 
 # remove a config file
-cd
-chezmoi forget <config_file>
-sudo rm -rf <config_file>
-
+chezmoi forget "$(chezmoi managed -i files -p absolute | fzf)"
