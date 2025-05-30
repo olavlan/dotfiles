@@ -1,7 +1,0 @@
-% docker
-
-% container, ubuntu
-@ docker
-
-# start a terminal session in a fresh ubuntu container
-docker run -it --rm ubuntu:latest bash
