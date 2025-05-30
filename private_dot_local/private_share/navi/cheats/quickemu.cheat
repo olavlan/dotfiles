@@ -1,7 +1,4 @@
-% quickemu
-
 % vm, ubuntu
-@ quickemu
 
-# start a ubuntu virtual machine
+# start an ubuntu virtual machine without persisting changes
 quickemu --status-quo --vm ~/ubuntu-24.04.conf
