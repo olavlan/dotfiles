@@ -91,7 +91,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='nvim'
 # fi
-export EDITOR='hx'
+export EDITOR='code'
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -140,3 +140,7 @@ export DCONF_TERMINAL_PROFILE="org.gnome.Terminal.Legacy.Profile:/org/gnome/term
 export DCONF_INTERFACE="org.gnome.desktop.interface"
 
 export HOMEBREW_BUNDLE_FILE=~/.brew/Brewfile 
+
+# shell widgets
+
+eval "$(navi widget zsh)"
