@@ -22,4 +22,4 @@ gsettings set $dconf_schema use-theme-colors false
 
 # set terminal shell
 gsettings set $dconf_schema use-custom-command true
-gsettings set $dconf_schema custom-command "source ~/bashrc && zsh"
+gsettings set $dconf_schema custom-command "/home/linuxbrew/.linuxbrew/bin/zsh"
