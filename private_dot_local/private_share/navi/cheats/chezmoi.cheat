@@ -1,8 +1,8 @@
 % config, edit
 # edit a config file
-chezmoi edit -a "$(chezmoi managed -i files -p absolute | fzf)"
+chezmoi edit -a "$(chezmoi managed -p absolute | fzf)"
 
 % config, remove
 # remove a config file
-chezmoi forget "$(chezmoi managed -i files -p absolute | fzf)"
+chezmoi forget "$(chezmoi managed -p absolute | fzf)"
 
