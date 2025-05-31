@@ -15,4 +15,6 @@ export HOMEBREW_BUNDLE_FILE=~/.brew/Brewfile
 brew bundle
 
 # install oh my zsh without replacing .zshrc file
+export RUNZSH="no"
+export KEEP_ZSHRC="yes"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
