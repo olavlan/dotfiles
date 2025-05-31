@@ -1,2 +1,0 @@
-profile=$(gsettings get org.gnome.Terminal.ProfilesList default) && profile=${profile:1:-1} && dconf_schema="org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/"
-chezmoi edit "$(chezmoi managed -p absolute | fzf)"
