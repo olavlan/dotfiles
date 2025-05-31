@@ -1,0 +1,4 @@
+% shell, while
+
+# insert a while loop
+while IFS= read -r line; do echo done
