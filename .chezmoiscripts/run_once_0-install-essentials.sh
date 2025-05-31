@@ -14,3 +14,4 @@ brew install gcc
 export HOMEBREW_BUNDLE_FILE=~/.brew/Brewfile 
 brew bundle
 
+# install oh my zsh without replacing .zshrc file
