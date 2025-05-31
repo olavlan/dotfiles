@@ -13,4 +13,4 @@ normal_colors = [black, red, green, yellow, blue, magenta, cyan, white]
 bright_colors = normal_colors
 colors = normal_colors + bright_colors
 colors_formatted = [f"rgb{c}" for c in colors]
-print(json.dumps(colors_formatted))
+print(colors_formatted)
