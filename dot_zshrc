@@ -1,4 +1,5 @@
 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 DISABLE_AUTO_UPDATE="true"
 
 # If you come from bash you might have to change your $PATH.
@@ -129,4 +130,3 @@ export DOCKER_HOST=unix:///var/run/docker.sock
 # evaluations
 
 eval "$(navi widget zsh)"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
