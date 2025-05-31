@@ -115,7 +115,7 @@ export PATH="${PATH}:/home/olav/.cargo/bin"
 
 # env variables 
  
-export DRIVE_DATA="~/drive/data"
+export DRIVE="~/drive"
 
 profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
 profile=${profile:1:-1}
