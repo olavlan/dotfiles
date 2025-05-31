@@ -19,3 +19,7 @@ gsettings set $dconf_schema palette "$palette"
 gsettings set $dconf_schema foreground-color "rgb(255,240,240)"
 gsettings set $dconf_schema background-color "rgb(0,0,0)"
 gsettings set $dconf_schema use-theme-colors false
+
+# set terminal shell
+gsettings set $dconf_schema use-custom-command true
+gsettings set $dconf_schema custom-command "zsh"
