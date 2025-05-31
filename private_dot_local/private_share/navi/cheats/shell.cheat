@@ -6,4 +6,4 @@ while IFS= read -r line; do echo done
 % shell, colors
 
 # print shell colors from script
-jq -r '.[]'
+python3 ~/.scripts/palette.py | jq -r '.[]' | while IFS= read -r line; do pastel paint -b  $line "This is a color"; done
