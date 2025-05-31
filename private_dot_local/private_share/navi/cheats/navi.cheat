@@ -1,5 +1,5 @@
 % navi
 
-# add navi cheat file
-hx $(navi info cheats-path)/
+# go to navi cheats folder
+cd $(navi info cheats-path)
 
