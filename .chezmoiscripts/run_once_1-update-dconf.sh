@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # set system fonts to Open Sans
 system_font="Open Sans Bold 14"
@@ -15,4 +15,4 @@ gsettings set $dconf_schema font "Monospace Bold 15"
 
 # set terminal color palette
 palette=$(python3 ~/.scripts/palette.py)
-gsettings set $dconf_schema palette $palette
+gsettings set $dconf_schema palette "$palette"
