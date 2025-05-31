@@ -16,3 +16,5 @@ gsettings set $dconf_schema font "Monospace Bold 15"
 # set terminal color palette
 palette=$(python3 ~/.scripts/palette.py)
 gsettings set $dconf_schema palette "$palette"
+gsettings set $DCONF_TERMINAL_PROFILE foreground-color "rgb(255,240,240)"
+gsettings set $DCONF_TERMINAL_PROFILE background-color "rgb(0,0,0)"
