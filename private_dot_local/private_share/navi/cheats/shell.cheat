@@ -2,3 +2,8 @@
 
 # insert a while loop
 while IFS= read -r line; do echo done
+
+% shell, colors
+
+# print shell colors from script
+jq -r '.[]'
