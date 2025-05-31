@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # set system fonts to Open Sans
 system_font="Open Sans Bold 14"
