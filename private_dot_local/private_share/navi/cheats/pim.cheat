@@ -1,0 +1,4 @@
+% pim, diary
+
+# create a new diary entry
+hx ~/drive/diary/$(date +%Y-%m-%dT%H:%M:%S).md
