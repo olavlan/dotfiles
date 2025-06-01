@@ -1,4 +1,6 @@
 brew "zsh"
+brew "bat"
+brew "zoxide"
 brew "ripgrep"
 brew "navi"
 brew "helix"
