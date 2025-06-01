@@ -130,3 +130,4 @@ export DOCKER_HOST=unix:///var/run/docker.sock
 # evaluations
 
 eval "$(navi widget zsh)"
+eval "$(zoxide init zsh)"
