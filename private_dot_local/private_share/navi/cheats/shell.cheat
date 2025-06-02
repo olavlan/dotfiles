@@ -7,3 +7,9 @@ while IFS= read -r line; do echo done
 
 # print shell colors from script
 python3 ~/.scripts/palette.py | jq -r '.[]' | while IFS= read -r line; do pastel paint -b  $line "This is a color"; done
+
+% shell, print, bat
+
+# print latest modified file in folder
+bat $(ls -t | head -n1)
+
