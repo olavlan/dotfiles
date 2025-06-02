@@ -13,3 +13,13 @@ python3 ~/.scripts/palette.py | jq -r '.[]' | while IFS= read -r line; do pastel
 # print latest modified file in folder
 bat $(ls -t | head -n1)
 
+% backup, sync, rsync
+
+# sync drive folder to cloud storage
+rsync -av ~/drive  zh5434@zh5434.rsync.net:
+
+# run command in cloud storage
+ssh -t zh5434@zh5434.rsync.net ls
+
+# sync drive folder from cloud storage
+rsync -av zh5434@zh5434.rsync.net:drive ~
