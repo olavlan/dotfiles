@@ -1,6 +1,5 @@
 brew "zsh"
 brew "pipx"
-brew "rclone"
 brew "bat"
 brew "zoxide"
 brew "ripgrep"
