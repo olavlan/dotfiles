@@ -6,6 +6,9 @@ dconf_schema="org.gnome.desktop.interface"
 gsettings set $dconf_schema font-name "$system_font"
 gsettings set $dconf_schema document-font-name "$system_font"
 
+# set system theme and night shift
+gsettings set $dconf_schema gtk-theme 'Yaru-dark'
+
 # set the terminal font
 profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
 profile=${profile:1:-1}
@@ -23,3 +26,4 @@ gsettings set $dconf_schema use-theme-colors false
 # set the default terminal shell
 gsettings set $dconf_schema use-custom-command true
 gsettings set $dconf_schema custom-command "/home/linuxbrew/.linuxbrew/bin/zsh"
+
