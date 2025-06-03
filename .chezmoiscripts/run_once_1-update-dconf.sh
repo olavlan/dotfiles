@@ -8,6 +8,12 @@ gsettings set $dconf_schema document-font-name "$system_font"
 
 # set system theme and night shift
 gsettings set $dconf_schema gtk-theme 'Yaru-dark'
+dconf_schema="org.gnome.settings-daemon.plugins.color"
+gsettings set $dconf_schema night-light-enabled true
+gsettings set $dconf_schema night-light-schedule-automatic false
+gsettings set $dconf_schema night-light-schedule-from 15.0
+gsettings set $dconf_schema night-light-schedule-to 14.99
+gsettings set $dconf_schema night-light-temperature 1700
 
 # set the terminal font
 profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
