@@ -7,7 +7,7 @@ gsettings set $dconf_schema font-name "$system_font"
 gsettings set $dconf_schema document-font-name "$system_font"
 
 # set system theme and night shift
-gsettings set $dconf_schema gtk-theme 'Yaru-dark'
+gsettings set $dconf_schema color-scheme "prefer-dark"
 dconf_schema="org.gnome.settings-daemon.plugins.color"
 gsettings set $dconf_schema night-light-enabled true
 gsettings set $dconf_schema night-light-schedule-automatic false
