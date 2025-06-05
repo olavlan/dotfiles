@@ -10,8 +10,8 @@ python3 ~/.scripts/palette.py | jq -r '.[]' | while IFS= read -r line; do pastel
 
 % shell, file, recent
 
-# latest modified file in folder
-$(ls -t | head -n1)
+# open latest modified file in folder
+hx $(ls -t | head -n1)
 
 # print latest modified file in folder
 bat $(ls -t | head -n1)
