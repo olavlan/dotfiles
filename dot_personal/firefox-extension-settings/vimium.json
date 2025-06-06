@@ -1,0 +1,53 @@
+{
+  "keyMappings": "",
+  "grabBackFocus": true,
+  "searchEngines": "podcast: https://www.listennotes.com/search/?q=%s&sort_by_date=0&scope=episode&offset=0&date_filter=any&unique_podcasts=1&language=Spanish&country=Spain&len_min=20&len_max=0 Spanish podcast\nw: https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s Wikipedia\naae: https://annas-archive.org/search?index=&page=1&q=%s&lang=es Libro\naau: https://annas-archive.org/search?index=&page=1&q=%s&lang=es Libro universitario\naa: https://annas-archive.org/search?index=&page=1&content=book_nonfiction&q=%s Annas Archive\ne: https://www.google.com/search?as_q=%s&lr=lang_es Google search in spanish\nle: https://www.casadellibro.com/?query=%s Libro español\np: https://open.spotify.com/search/%s/episodes Podcast search\nyc: https://www.youtube.com/playlist?list=%s Channel id, replace c with u\nlu: https://www.casadellibro.com/libros-universitarios?query=%s Libros universitarios\n\n# More examples.\n#\n# (Vimium supports search completion Wikipedia, as\n# above, and for these.)\n#\n# g: https://www.google.com/search?q=%s Google\n# l: https://www.google.com/search?q=%s&btnI I'm feeling lucky...\n# y: https://www.youtube.com/results?search_query=%s Youtube\n# gm: https://www.google.com/maps?q=%s Google maps\n# b: https://www.bing.com/search?q=%s Bing\n# d: https://duckduckgo.com/?q=%s DuckDuckGo\n# az: https://www.amazon.com/s/?field-keywords=%s\n# qw: https://www.qwant.com/?q=%s Qwant",
+  "settingsVersion": "2.2.1",
+  "userDefinedLinkHintCss": "div > .vimiumHintMarker {\n/* linkhint boxes */\nbackground: #ffe541;\nborder: 1px solid #E3BE23;\n}\n\ndiv > .vimiumHintMarker span {\n/* linkhint text */\ncolor: black;\nfont-weight: bold;\nfont-size: 16px;\n}\n\ndiv > .vimiumHintMarker > .matchingCharacter {\n}",
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https?://colab.research.google.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://localhost:8888/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://localhost:8889/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://localhost:8890/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://localhost:5003/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://www.gaiagps.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://www.nytimes.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://wordly.org/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://docs.llamaindex.ai/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://calendar.google.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://commitmono.com/*"
+    }
+  ]
+}
