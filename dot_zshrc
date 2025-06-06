@@ -123,7 +123,7 @@ profile=${profile:1:-1}
 export DCONF_TERMINAL_PROFILE="org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/"
 export DCONF_INTERFACE="org.gnome.desktop.interface"
 
-export HOMEBREW_BUNDLE_FILE=~/.brew/Brewfile 
+export HOMEBREW_BUNDLE_FILE=~/.personal/Brewfile 
 
 export DOCKER_HOST=unix:///var/run/docker.sock
 
