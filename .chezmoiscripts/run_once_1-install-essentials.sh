@@ -25,3 +25,5 @@ tar xf $compressed_file
 rm $compressed_file
 
 # install foliate
+eget johnfactotum/foliate --asset=deb
+sudo apt install ./$(find *foliate*)
