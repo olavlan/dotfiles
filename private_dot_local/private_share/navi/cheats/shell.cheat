@@ -26,3 +26,8 @@ ssh -t zh5434@zh5434.rsync.net ls
 
 # sync drive folder from cloud storage
 rsync -av zh5434@zh5434.rsync.net:drive ~
+
+% clipboard
+
+# copy to clipboard
+xclip -selection clipboard
