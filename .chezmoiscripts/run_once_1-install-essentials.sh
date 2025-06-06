@@ -17,3 +17,11 @@ brew bundle
 export RUNZSH="no"
 export KEEP_ZSHRC="yes"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# install firefox
+wget --content-disposition "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US"
+compressed_file=$(find *firefox*)
+tar xf $compressed_file
+rm $compressed_file
+
+# install foliate
