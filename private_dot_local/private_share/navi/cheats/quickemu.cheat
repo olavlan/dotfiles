@@ -1,4 +1,4 @@
 % vm, ubuntu
 
 # start an ubuntu virtual machine without persisting changes
-quickemu --status-quo --vm ~/ubuntu-24.04.conf
+quickemu --status-quo --vm ~/ubuntu-25.04.conf
