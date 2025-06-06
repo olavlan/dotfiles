@@ -24,6 +24,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # tar xf $compressed_file
 # rm $compressed_file
 
-# install foliate
+# install foliate 
 eget johnfactotum/foliate --asset=deb
 sudo apt install ./$(find *foliate*)
