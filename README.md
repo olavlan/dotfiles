@@ -1,8 +1,10 @@
-
+Steps to bootstrap:
+1. Install chezmoi.
 ```
-sudo apt install chezmoi
+sh -c "$(curl -fsLS get.chezmoi.io)"
 ```
+2. Transfer dotfiles and run bootstrap scripts.
 ```
 chezmoi init olavlan && chezmoi apply -x scripts && chezmoi apply
 ```
-Log into firefox and upload extension settings.
+3. Log into firefox and upload extension settings.
