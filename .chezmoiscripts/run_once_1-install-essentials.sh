@@ -10,7 +10,7 @@ test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/bre
 echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 
 # install packages
-export HOMEBREW_BUNDLE_FILE=~/.brew/Brewfile 
+export HOMEBREW_BUNDLE_FILE=~/.personal/Brewfile 
 brew bundle
 
 # install oh my zsh without replacing .zshrc file
