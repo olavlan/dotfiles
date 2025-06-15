@@ -2,5 +2,6 @@
 name = "python"
 scope = "source.python"
 file-types = ["py"] 
+auto-format = true
 indent = { tab-width = 4, unit = "    " }
 formatter = { command = "uvx ruff format" }
