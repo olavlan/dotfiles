@@ -1,0 +1,7 @@
+[[language]]
+name = "python"
+scope = "source.python"
+file-types = ["py"] 
+comment-tokens = "#"
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "uvx ruff format" }
