@@ -3,4 +3,4 @@ name = "python"
 scope = "source.python"
 file-types = ["py"] 
 auto-format = true
-formatter = { command = "ruff" }
+formatter = { command = "ruff format -" }
