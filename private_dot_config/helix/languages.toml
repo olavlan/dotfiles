@@ -1,6 +1,8 @@
 [[language]]
 name = "python"
-scope = "source.python"
-file-types = ["py"] 
 auto-format = true
-formatter = { command = "ruff format" }
+language-servers = [[ "pyright", "ruff" ]]
+
+[[langage-server.ruff]]
+command = "ruff"
+args = ["server"]
