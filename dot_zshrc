@@ -108,7 +108,7 @@ export EDITOR='hx'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshrc="$EDITOR ~/.zshrc"
-alias syncdata="rclone sync ~/main/data gdrive:/main/data"
+
 # Created by `pipx` on 2025-04-28 13:03:50
 export PATH="$PATH:/home/olav/.local/bin"
 export PATH="${PATH}:/home/olav/.cargo/bin"
@@ -126,6 +126,7 @@ export DCONF_INTERFACE="org.gnome.desktop.interface"
 export HOMEBREW_BUNDLE_FILE=~/.personal/Brewfile 
 
 export DOCKER_HOST=unix:///var/run/docker.sock
+export SHELL="/home/linuxbrew/.linuxbrew/bin/zsh"
 
 # evaluations
 
