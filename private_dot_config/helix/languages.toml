@@ -1,7 +1,7 @@
 [[language]]
 name = "python"
 auto-format = true
-language-servers = [[ "pyright", "ruff" ]]
+language-servers = [ "pyright", "ruff" ]
 
 [[langage-server.ruff]]
 command = "ruff"
