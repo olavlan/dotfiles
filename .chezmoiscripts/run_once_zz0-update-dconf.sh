@@ -20,7 +20,7 @@ profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
 profile=${profile:1:-1}
 dconf_schema="org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/"
 gsettings set $dconf_schema use-system-font false
-gsettings set $dconf_schema font "DejaVu Sans Mono ExtraBold 16"
+gsettings set $dconf_schema font "DejaVu Sans Mono ExtraBold 18"
 
 # set the terminal color palette
 palette=$(python3 ~/.scripts/palette.py)
