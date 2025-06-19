@@ -23,7 +23,7 @@ gsettings set $dconf_schema use-system-font false
 gsettings set $dconf_schema font "DejaVu Sans Mono ExtraBold 17"
 
 # set the terminal color palette
-palette=$(python3 ~/.scripts/palette.py)
+palette=$(python3 ~/.personal/scripts/palette.py)
 gsettings set $dconf_schema palette "$palette"
 gsettings set $dconf_schema foreground-color "rgb(255,240,240)"
 gsettings set $dconf_schema background-color "rgb(0,0,0)"
