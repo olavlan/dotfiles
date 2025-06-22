@@ -1,0 +1,6 @@
+% youtube, subtitle
+
+# download subtitle of a youtube video
+yt-dlp --skip-download --write-auto-sub --convert-subs srt --sub-lang es
+
+# convert subtitle file to plain text
