@@ -7,4 +7,4 @@ yt-dlp --skip-download --write-auto-sub --convert-subs srt --sub-lang es
 dos2unix input.srt
 
 # convert subtitle file to plain text
-sed -r '/^[0-9]+$/{N;d}; /^[[:space:]]*$/d' input.srt | uniq
+sed -r '/^[0-9]+$/{N;d}; /^[[:space:]]*$/d' input.srt | uniq | tr '\n' ' '
