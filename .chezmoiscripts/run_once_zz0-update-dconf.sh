@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# set the system  font to Open Sans
+# set the system font to Open Sans
 system_font="Open Sans Bold 14"
 dconf_schema="org.gnome.desktop.interface"
 gsettings set $dconf_schema font-name "$system_font"
